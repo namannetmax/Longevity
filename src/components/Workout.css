@@ -1,0 +1,135 @@
+.workout {
+  padding: 120px 0;
+  background: linear-gradient(135deg, rgba(15, 15, 15, 0.8) 0%, rgba(26, 26, 26, 0.5) 100%);
+}
+
+.workout-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.workout-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.workout-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.workout-title .gold {
+  color: var(--accent-gold);
+}
+
+.workout-description {
+  color: var(--text-gray);
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.btn-create {
+  background-color: transparent;
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.btn-create:hover {
+  background-color: rgba(255, 193, 7, 0.1);
+}
+
+.workout-right {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-card {
+  background: linear-gradient(135deg, rgba(50, 50, 50, 0.3) 0%, rgba(30, 30, 30, 0.5) 100%);
+  border: 1px solid var(--border-gray);
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 280px;
+  backdrop-filter: blur(10px);
+}
+
+.custom-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.custom-card .label {
+  font-size: 13px;
+  color: var(--text-gray);
+}
+
+.custom-card .icon {
+  font-size: 16px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.routine-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: rgba(30, 30, 30, 0.5);
+  border-radius: 6px;
+  border: 1px solid var(--border-gray);
+}
+
+.routine-name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.routine-time {
+  font-size: 12px;
+  color: var(--text-gray);
+}
+
+.btn-add {
+  background-color: transparent;
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.btn-add:hover {
+  background-color: rgba(255, 193, 7, 0.1);
+}
+
+@media (max-width: 768px) {
+  .workout-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .workout-title {
+    font-size: 48px;
+  }
+}

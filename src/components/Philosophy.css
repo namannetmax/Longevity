@@ -1,0 +1,71 @@
+.philosophy {
+  padding: 120px 0;
+  background: linear-gradient(135deg, rgba(15, 15, 15, 0.8) 0%, rgba(26, 26, 26, 0.5) 100%);
+}
+
+.philosophy-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.philosophy-title {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.pillar {
+  background: linear-gradient(135deg, rgba(50, 50, 50, 0.3) 0%, rgba(30, 30, 30, 0.5) 100%);
+  border: 1px solid var(--border-gray);
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.pillar:hover {
+  border-color: var(--accent-gold);
+  transform: translateY(-4px);
+}
+
+.pillar-icon {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.pillar h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.pillar p {
+  font-size: 13px;
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .pillars {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .philosophy-title {
+    font-size: 24px;
+  }
+}
